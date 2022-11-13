@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcula tu subneteo</title>
+    <link rel="stylesheet" href="./subneteo.css">
+</head>
+<body>
+    <header>
+        <h1>Calcula tu Subneteo</h1>
+    </header>   
+    
+    <main>
+        <div></div>
+        <div class="main-view-left">
+            <form action="" class="main-view-left__form">
+                
+                <label for="numeroHost">
+                    <span>Ingresa el numero de Host en la red:</span>
+                    <input type="number" name="numeroHost" id="numeroHost" placeholder="ingresa #de_host">
+                </label>
+
+                <label for="numeroRed">
+                    <span>Ingresa el numero de la red: </span>
+                    <input type="number" name="numeroRed" id="numeroRed" placeholder="Ingresa el #de_red">
+                </label>
+                <span>Ingrese los octetos de su ip base.</span>
+                <label for="">
+                    <input type="number" name="ipPT1" id="ipPT1" placeholder="Ingresa la IP">
+                </label>
+
+                <label for="">
+                    <input type="number" name="ipPT2" id="ipPT2" placeholder="Ingresa la IP">
+                </label>
+
+                
+                <label for="">
+                    <input type="number" name="ipPT3" id="ipPT3" placeholder="Ingresa la IP">
+                </label>
+
+                <label for="">
+                    <input type="number" name="ipPT4" id="ipPT4" placeholder="Ingresa la IP">
+                </label>
+                
+                <input type="button" value="Calcular" onclick="calcularIP()">
+            </form>
+        </div>
+    
+        <div class="main-view-right">
+            <p>
+            </p>
+        </div>
+    </main>
+    <!-- <form action="">
+        Ingresa un número:
+        <input type="number" maxlength="3" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" /><i>(Máximo 12 dígitos)</i>
+        <br><input type="submit">
+      </form>
+       -->
+    <footer>
+
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
