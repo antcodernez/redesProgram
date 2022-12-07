@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcula tu subneteo</title>
+    <link rel="stylesheet" href="./subneteo.css">
+    <link rel="stylesheet" href="../style/stylesHaziel.css">
+    <link rel="stylesheet" href="../style/nav-bar-style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+            </input>
+        </label>
+        <div class="bitzone">
+            <a href="index.html" class="enlace">
+                <img src="../icons/logo-transparent.png" class="logo">
+
+            </a>
+        </div>
+        <div class="navegacion">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a class="active" href="#" >Subneteo</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1 class="purple-neon">Cálcula tu Subneteo</h1>
+    </header>   
+    
+    <main>
+        <div class="container">        
+            <div class="main-view-left content">
+                <form action="" class="main-view-left__form">
+                    
+                    <label for="numeroHost">
+                        <span>Ingresa el numero de Host en la red:</span>
+                        <input type="number" name="numeroHost" id="numeroHost" placeholder="ingresa #de_host">
+                    </label>
+
+                    <label for="numeroRed">
+                        <span>Ingresa el numero de la red: </span>
+                        <input type="number" name="numeroRed" id="numeroRed" placeholder="Ingresa el #de_red">
+                    </label>
+                    <span>Ingrese los octetos de su ip base.</span>
+                    <label for="">
+                        <input type="number" name="ipPT1" id="ipPT1" placeholder="Ingresa la IP">
+                    </label>
+
+                    <label for="">
+                        <input type="number" name="ipPT2" id="ipPT2" placeholder="Ingresa la IP">
+                    </label>
+
+                    
+                    <label for="">
+                        <input type="number" name="ipPT3" id="ipPT3" placeholder="Ingresa la IP">
+                    </label>
+
+                    <label for="">
+                        <input type="number" name="ipPT4" id="ipPT4" placeholder="Ingresa la IP">
+                    </label>
+                    
+                    <input type="button" value="Calcular" onclick="calcularIP()">
+                </form>
+            </div>
+        
+            <div class="main-view-right content">
+                <p>
+                </p>
+            </div>
+        </div>
+    </main>
+    <!-- <form action="">
+        Ingresa un número:
+        <input type="number" maxlength="3" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" /><i>(Máximo 12 dígitos)</i>
+        <br><input type="submit">
+      </form> -->
+      
+    <!--Pie de pagina-->
+    <footer class="footer-style">
+        <div class="group1">
+            <div class="box-footer">
+                <figure class="logo">
+                    <a href="#">
+                        <img class="logo-footer" src="../icons/logo.png" alt="Logo Subnetting">
+                    </a>
+                </figure>
+            </div>
+            <div class="box-footer">
+                <h2 class="tittle-footer">Sobre Nosotros</h2>
+                <p><b>Subnetting</b> es de uso gratuita, creada a partir de un proyecto escolar. Pero con miras a una
+                    herramienta pública accesible a todas esas personas interesadas en las Redes y Telecomunicaciones.
+                </p>
+                <p>
+                    El código de está página es público y se encuentra en el repositorio de nuestro proyecto: <a
+                        href="https://github.com/antcodernez/redesProgram.git" target="_blank">Proyecto</a>
+                </p>
+
+            </div>
+            <div class="box-footer">
+                <h2 class="tittle-footer">Autores</h2>
+                <div class="authors-footer">
+                    <ul>
+                        <li>Jose Alejandro Briones Arroyo</li>
+                        <li>Jesus Antonio Estrada Jímenez</li>
+                        <li>Jaime Vázquez Santiago</li>
+                        <li>Eli Haziel Ortiz Ramirez</li>
+                        <li><br> Powered by: <b>Net - Tools&reg;</b></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="gruop2">
+            <small class="copyright-footer">&copy; 2022 <b>Subnetting</b> - Todos los Derechos Reservados</small>
+            <small class="copyright-footer"><br>&copy; 2022 <b>Net-Tools</b> - Todos los Derechos Reservados</small>
+            <small class="copyright-footer"><br> The background is provided by <a class="link-footer"
+                    href="https://loading.io" target="_blank">loading.io</a> </small>
+        </div>
+    </footer>
+
+    <!--Scripts JavaScript-->
+    <script src="../nav-bar.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

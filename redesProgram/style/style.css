@@ -1,0 +1,16 @@
+*
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;        
+    }
+html
+    {
+        font-size: 62.5%;
+    }
+:root
+    {
+        --sm: 1.6rem;
+        --md: 1.8rem;
+        --lg: 2.4rem;
+    }
